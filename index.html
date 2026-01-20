@@ -20,6 +20,14 @@
             </div>
         </section>
     </main>
+
+    <script>
+        document.querySelector('#smile-button').addEventListener('click', function () {
+            let name = prompt('Type your name!');
+            document.getElementById('smile').innerHTML = `Welcome ${name}, nice to meet you! 😊`;
+        });
+    </script>
+
 </body>
 
 </html>
