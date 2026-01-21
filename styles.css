@@ -8,6 +8,7 @@ html,
 body {
   height: 100%;
   font-family: Arial, sans-serif;
+  color: darkslategray;
 }
 
 body {
@@ -41,15 +42,39 @@ section {
   padding: 1.5rem;
   background-color: #f9f9f9;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .section {
   margin: 24px auto;
   max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 1rem;
+  gap: 2rem;
 }
 
 .smile-content {
   text-align: center;
+}
+
+.sum-title{
+  color: chocolate;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+span{
+  color: chocolate;
+  font-size: 1.5rem;
 }
 
 button {
@@ -61,4 +86,27 @@ button {
   font-size: 1rem;
   cursor: pointer;
   margin: 1rem;
+  max-width: fit-content;
+  align-self: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: blueviolet;
+  box-shadow: 0 0 5px rgba(138, 43, 226, 0.5);
 }
